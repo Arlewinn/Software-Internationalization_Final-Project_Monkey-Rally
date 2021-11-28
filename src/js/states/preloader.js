@@ -35,6 +35,7 @@ MouseGame.Preloader.prototype = {
         }
 
         // Load everything!!
+        var test = "cleared_text_backgrounds/";
         game.load.audio('game-music', ['assets/music/nowyouwilldie.mp3', 'assets/music/nowyouwilldie.ogg']);
         game.load.audio('menu-music', ['assets/music/game.mp3', 'assets/music/game.ogg']);
         game.load.image('background','assets/backgrounds/placeholder.png');
@@ -52,7 +53,7 @@ MouseGame.Preloader.prototype = {
         game.load.image('button-mute','assets/buttons/mute_audio.png');
         game.load.image('button-unmute','assets/buttons/unmute_audio.png');
         game.load.image('credits-background','assets/backgrounds/credits-background.jpg');
-        game.load.image('intro-1','assets/backgrounds/intro-1.jpg');
+        game.load.image('intro-1','assets/backgrounds/'+test+'intro-1.jpg');
         game.load.image('intro-10','assets/backgrounds/intro-10.jpg');
         game.load.image('intro-2','assets/backgrounds/intro-2.jpg');
         game.load.image('intro-3','assets/backgrounds/intro-3.jpg');
