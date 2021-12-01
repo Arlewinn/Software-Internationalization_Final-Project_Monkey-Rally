@@ -10,6 +10,10 @@ var intro2;
 var intro3;
 var nextButton;
 var introScreens = [];
+var line = [];
+var lineInt = 0;
+var counter = 0;
+var text = [];
 
 MouseGame.Intro.prototype = {
     create: function () {
@@ -64,15 +68,33 @@ MouseGame.Intro.prototype = {
         }
     },
 
+    // updateText: function(oldText, newText) {
+    //     oldText.destroy();
+    //     game.add.text(32,32, newText,{font: "15px Arial", fill: "#19de65"})
+    // },
+
     nextSlide: function() {
         "use strict";
 
+
+
         if (introScreens.length > 1) {
             var nextScene = introScreens.shift();
+            line = introText[lineInt];
 
             game.add.tween(nextScene)
                 .to({ alpha: 0 }, 500, Phaser.Easing.Linear.None)
                 .start();
+           
+            if (counter < 2 || counter > 5){
+                if (lineInt>0){
+                    text[lineInt-1].destroy();
+                }
+                if (lineInt == 0){text[lineInt] = game.add.text(intro1X,intro1Y, line, intro1Style);}
+                else if (lineInt == 1){text[lineInt] = game.add.text(intro2X,intro2Y, line, intro2Style)}
+                lineInt++;
+            }
+            counter++;
         } else {
             this.showMenu();
         }
@@ -85,3 +107,18 @@ MouseGame.Intro.prototype = {
         this.game.state.start('mainmenu');
     },
 };
+
+/*
+todo:
+initialize content in index.html
+in nextslide have line = content file.content variable name[lineindex]
+game.add.text(height, width, text itself, {font: "px font", fill: font color});
+text = game.add.text(32, 32, '', { font: "15px Arial", fill: "#19de65" });
+
+Where does it place on screen?
+How do I change it?
+Is the font compatible in other languages?
+Variable for changing the text
+How to add borders to the text to keep it where it needs to be
+Can we curve the text in Phaser?
+*/
