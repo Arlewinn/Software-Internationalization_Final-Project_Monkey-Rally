@@ -68,10 +68,7 @@ MouseGame.Intro.prototype = {
         }
     },
 
-    // updateText: function(oldText, newText) {
-    //     oldText.destroy();
-    //     game.add.text(32,32, newText,{font: "15px Arial", fill: "#19de65"})
-    // },
+
 
     nextSlide: function() {
         "use strict";
@@ -82,6 +79,7 @@ MouseGame.Intro.prototype = {
             var nextScene = introScreens.shift();
             line = introText[lineInt];
 
+
             game.add.tween(nextScene)
                 .to({ alpha: 0 }, 500, Phaser.Easing.Linear.None)
                 .start();
@@ -90,8 +88,12 @@ MouseGame.Intro.prototype = {
                 if (lineInt>0){
                     text[lineInt-1].destroy();
                 }
-                if (lineInt == 0){text[lineInt] = game.add.text(intro1X,intro1Y, line, intro1Style);}
-                else if (lineInt == 1){text[lineInt] = game.add.text(intro2X,intro2Y, line, intro2Style)}
+                if (lineInt == 0){text[lineInt] = game.add.text(intro1X,intro1Y, line, introStyle);}
+                else if (lineInt == 1){text[lineInt] = game.add.text(intro2X,intro2Y, line, introStyle)}
+                else if (lineInt == 2){text[lineInt] = game.add.text(intro3X,intro3Y, line, introStyle)}
+                else if (lineInt == 3){text[lineInt] = game.add.text(intro4X,intro3Y, line, introStyle)}
+                else if (lineInt == 4){text[lineInt] = game.add.text(intro5X,intro3Y, line, introStyle)}
+                else if (lineInt == 5){text[lineInt] = game.add.text(intro6X,intro3Y, line, introStyle)}
                 lineInt++;
             }
             counter++;

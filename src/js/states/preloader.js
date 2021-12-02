@@ -5,6 +5,7 @@ MouseGame.Preloader = function (game) {
 
     this.background = null;
     this.preloadBar = null;
+    this.text = null;
 
     this.ready = false;
 
