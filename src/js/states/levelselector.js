@@ -5,6 +5,17 @@ MouseGame.LevelSelector = function (game) {
     this.game = game;
 };
 
+var level1Text;
+var level2Text;
+var level3Text;
+var level4Text;
+var level5Text;
+var level6Text;
+var level7Text;
+var level8Text;
+var backText;
+
+
 MouseGame.LevelSelector.prototype = {
     level: null,
 
@@ -29,6 +40,7 @@ MouseGame.LevelSelector.prototype = {
         //     var text = game.add.bitmapText(this.game.world.centerX - 80, 55 + (i*55), levelName, { font: '24px DejaVu', align: 'center' });
         // };
 
+
         var posY = 80;
         var posX = 80;
 
@@ -52,6 +64,15 @@ MouseGame.LevelSelector.prototype = {
         }
 
         //history.pushState(null, null, '#levelselector');
+        level1Text = game.add.text(level1X, level1Y, level1, levelStyle);
+        level2Text = game.add.text(level2X, level2Y, level2, levelStyle);
+        level3Text = game.add.text(level3X, level3Y, level3, levelStyle);
+        level4Text = game.add.text(level4X, level4Y, level4, levelStyle);
+        level5Text = game.add.text(level5X, level5Y, level5, levelStyle);
+        level6Text = game.add.text(level6X, level6Y, level6, levelStyle);
+        level7Text = game.add.text(level7X, level7Y, level7, levelStyle);
+        level8Text = game.add.text(level8X, level8Y, level8, levelStyle);
+        backText = game.add.text(backX, backY, back, levelStyle);
     },
 
     startGame: function (button) {
