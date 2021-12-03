@@ -14,6 +14,8 @@ var line = [];
 var lineInt = 0;
 var counter = 0;
 var text = [];
+var titleText;
+
 
 MouseGame.Intro.prototype = {
     create: function () {
@@ -30,6 +32,8 @@ MouseGame.Intro.prototype = {
         var intro2 = this.game.add.sprite(0, 0, 'intro-2');
         var intro1 = this.game.add.sprite(0, 0, 'intro-1');
         var title = this.game.add.sprite(0, 0, 'title');
+
+        titleText = game.add.text(introTitleX, introTitleY, introTitle, introTitleStyle);
 
         intro10.inputEnabled = true;
         intro9.inputEnabled = true;
@@ -57,6 +61,7 @@ MouseGame.Intro.prototype = {
 
         introScreens = [title, intro1, intro2, intro3, intro4, intro5, intro6, intro7, intro8, intro9, intro10];
 
+        
         playMusic(true);
     },
 
@@ -114,7 +119,7 @@ MouseGame.Intro.prototype = {
 todo:
 initialize content in index.html
 in nextslide have line = content file.content variable name[lineindex]
-game.add.text(height, width, text itself, {font: "px font", fill: font color});
+game.add.text(x value, y value, text itself, {font: "px font", fill: font color});
 text = game.add.text(32, 32, '', { font: "15px Arial", fill: "#19de65" });
 
 Where does it place on screen?

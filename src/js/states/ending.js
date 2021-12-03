@@ -19,6 +19,7 @@ MouseGame.Ending.prototype = {
         title.inputEnabled = true;
         title.events.onInputDown.add(this.showMenu, this);
 
+
         playMusic(true);
     },
 

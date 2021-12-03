@@ -1,3 +1,5 @@
+var pausetext = [];
+
 MouseGame.Game = function () {
     "use strict";
 };
@@ -57,6 +59,8 @@ MouseGame.Game.prototype = {
         var pauseKey = game.input.keyboard.addKey(Phaser.Keyboard.ESC);
         pauseKey.onDown.add(MouseGame.Game.prototype.togglePause, this);
 
+
+
     },
 
     update: function() {
@@ -105,6 +109,8 @@ MouseGame.Game.prototype = {
         MouseGame.MainMenu.prototype.bindButtonHover(this.pauseMenu.mainMenuButton);
         MouseGame.MainMenu.prototype.bindButtonHover(this.pauseMenu.returnToGameButton);
         playMusic(false, true);
+
+        pausetext[0] = this.game.add.text();
     },
 
     unpauseGame: function () {
@@ -119,6 +125,7 @@ MouseGame.Game.prototype = {
             MouseGame.Game.prototype.wasPlaying = false;
             MouseGame.Commands.prototype.executeOrder();
         }
+        pausetext[0].destroy();
     },
 
     returnToMainMenu: function () {
