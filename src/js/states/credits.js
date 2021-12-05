@@ -7,7 +7,7 @@ MouseGame.Credits = function (game) {
 
 var creditText;
 var codeText;
-var anitaText;
+var antilaText;
 var graphicText;
 var erikLauraText;
 var musicText;
@@ -39,26 +39,16 @@ MouseGame.Credits.prototype = {
         button.anchor.setTo(0.5, 0.5);
         MouseGame.MainMenu.prototype.bindButtonHover(button);
 
-        creditText = game.add.text(creditTextX, creditTextY, creditText, creditsStyle);
-        codeText = game.add.text(codeTextX, codeTextY, codeText, creditsStyle);
-        anitaText = game.add.text(anitaTextX, anitaTextY, anitaText, creditsStyle);
-        graphicText = game.add.text(graphicTextX, graphicTextY, graphicText, creditsStyle);
-        erikLauraText = game.add.text(erikLauraTextX, erikLauraTextY, erikLauraText, creditsStyle);
-        musicText = game.add.text(musicTextX, musicTextY, musicText, creditsStyle);
-        raxlText = game.add.text(raxlTextX, raxlTextY, raxlText, creditsStyle);
-        backText = game.add.text(backX, backY, backText, creditsStyle);
+        creditText = game.add.text(creditX, creditY, credit, creditsStyle);
+        codeText = game.add.text(codeX, codeY, code, creditsStyle2);
+        antilaText = game.add.text(antilaX, antilaY, antila, creditsStyle3);
+        graphicText = game.add.text(graphicX, graphicY, graphic, creditsStyle2);
+        erikLauraText = game.add.text(erikLauraX, erikLauraY, erikLaura, creditsStyle3);
+        musicText = game.add.text(musicX, musicY, music, creditsStyle2);
+        raxlText = game.add.text(raxlX, raxlY, raxl, creditsStyle3);
+        backText = game.add.text(backTextX, backTextY, backText, creditsStyle4);
         //history.pushState(null, null, '#credits');
         
-
-            /*level1Text = game.add.text(level1X, level1Y, level1, levelStyle);
-            level2Text = game.add.text(level2X, level2Y, level2, levelStyle);
-            level3Text = game.add.text(level3X, level3Y, level3, levelStyle);
-            level4Text = game.add.text(level4X, level4Y, level4, levelStyle);
-            level5Text = game.add.text(level5X, level5Y, level5, levelStyle);
-            level6Text = game.add.text(level6X, level6Y, level6, levelStyle);
-            level7Text = game.add.text(level7X, level7Y, level7, levelStyle);
-            level8Text = game.add.text(level8X, level8Y, level8, levelStyle);
-            backText = game.add.text(backX, backY, back, levelStyle);*/
     },
 
     showMenu: function () {
