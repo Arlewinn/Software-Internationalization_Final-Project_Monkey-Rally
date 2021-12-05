@@ -38,17 +38,17 @@ MouseGame.Credits.prototype = {
         var button = this.game.add.button(this.game.world.centerX, 630, 'button-back', this.showMenu, this, 2, 1, 0);
         button.anchor.setTo(0.5, 0.5);
         MouseGame.MainMenu.prototype.bindButtonHover(button);
+
+        creditText = game.add.text(creditTextX, creditTextY, creditText, creditsStyle);
+        codeText = game.add.text(codeTextX, codeTextY, codeText, creditsStyle);
+        anitaText = game.add.text(anitaTextX, anitaTextY, anitaText, creditsStyle);
+        graphicText = game.add.text(graphicTextX, graphicTextY, graphicText, creditsStyle);
+        erikLauraText = game.add.text(erikLauraTextX, erikLauraTextY, erikLauraText, creditsStyle);
+        musicText = game.add.text(musicTextX, musicTextY, musicText, creditsStyle);
+        raxlText = game.add.text(raxlTextX, raxlTextY, raxlText, creditsStyle);
+        backText = game.add.text(backX, backY, backText, creditsStyle);
         //history.pushState(null, null, '#credits');
         
-            //history.pushState(null, null, '#levelselector');
-            creditText = game.add.text(creditTextX, creditTextY, credit, creditsStyle);
-            codeText = game.add.text(codeTextX, codeTextY, code, creditsStyle);
-            anitaText = game.add.text(anitaTextX, anitaTextY, anita, creditsStyle);
-            graphicText = game.add.text(graphicTextX, graphicTextY, graphic, creditsStyle);
-            erikLauraText = game.add.text(erikLauraTextX, erikLauraTextY, erikLaura, creditsStyle);
-            musicText = game.add.text(musicTextX, musicTextY, music, creditsStyle);
-            raxlText = game.add.text(raxlTextX, raxlTextY, raxl, creditsStyle);
-            backText = game.add.text(backX, backY, back, creditsStyle);
 
             /*level1Text = game.add.text(level1X, level1Y, level1, levelStyle);
             level2Text = game.add.text(level2X, level2Y, level2, levelStyle);
