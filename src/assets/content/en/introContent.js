@@ -6,8 +6,14 @@ var introStart = "click to start!";
 
 var introStartX = 260;
 var introStartY= 510;
-
 var introStartStyle = {font: "50px CreativeBlock BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+
+
+var introTale = "(* or the amazing story of how I was saved\nfrom fire and disaster by the help of a faithful\nand loyal monkey companion)";
+var introTaleX = 115;
+var introTaleY = 573;
+var introTaleStyle = {font: "28px CreativeBlock BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+
 
 var introText = ["Oh no! There has been an accident in the laboratory\n and you are stuck between the flames!",
 "Your army of trained monkeys\n have run away…",

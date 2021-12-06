@@ -15,6 +15,7 @@ var lineInt = 0;
 var counter = 0;
 var text = [];
 var startText;
+var taleText;
 
 
 MouseGame.Intro.prototype = {
@@ -34,6 +35,7 @@ MouseGame.Intro.prototype = {
         var title = this.game.add.sprite(0, 0, 'title');
 
         startText = game.add.text(introStartX, introStartY, introStart, introStartStyle);
+        taleText = game.add.text(introTaleX, introTaleY, introTale, introTaleStyle);
 
         intro10.inputEnabled = true;
         intro9.inputEnabled = true;
@@ -95,6 +97,7 @@ MouseGame.Intro.prototype = {
                 }
                 else{
                     startText.destroy();
+                    taleText.destroy();
                 }
                 if (lineInt == 0){text[lineInt] = game.add.text(intro1X,intro1Y, line, introStyle);}
                 else if (lineInt == 1){text[lineInt] = game.add.text(intro2X,intro2Y, line, introStyle)}
