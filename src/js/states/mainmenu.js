@@ -58,15 +58,19 @@ MouseGame.MainMenu.prototype = {
         var logo = this.game.add.sprite(this.game.world.centerX, 200, 'logo');
         logo.anchor.setTo(0.5, 0.5);
 
-        var button = this.game.add.button(this.game.world.centerX, 500, 'button-play', this.startGame, this, 2, 1, 0);
+        var button = this.game.add.button(this.game.world.centerX, 500, 'button-empty', this.startGame, this, 2, 1, 0);
         button.anchor.setTo(0.5, 0.5);
         button.setInteractive(true);
         this.bindButtonHover(button);
 
-        var credits = this.game.add.button(this.game.world.centerX, 620, 'button-credits', this.showCredits, this, 2, 1, 0);
+        this.game.add.text(playX, playY, playText, mainContentStyle);
+
+        var credits = this.game.add.button(this.game.world.centerX, 620, 'button-empty', this.showCredits, this, 2, 1, 0);
         credits.anchor.setTo(0.5, 0.5);
         this.bindButtonHover(credits);
         //history.pushState(null, null, '#mainmenu');
+
+        this.game.add.text(creditX, creditY, creditText, mainContentStyle);
 
         playMusic(true);
     },

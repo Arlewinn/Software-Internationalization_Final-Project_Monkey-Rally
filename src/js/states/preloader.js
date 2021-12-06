@@ -80,7 +80,8 @@ MouseGame.Preloader.prototype = {
         game.load.tileset('tiles', 'assets/tiles/game-tiles.png', 64, 64);
         game.load.tileset('decorations', 'assets/tiles/decorations.png', 64, 64);
         // game.load.tilemap(activeLevel, 'assets/maps/' + activeLevel + '.json', null, Phaser.Tilemap.TILED_JSON);
-
+        // Load empty button for translation
+        game.load.image('button-empty','assets/buttons/button_blank-assets/button_empty.png');
     },
 
     create: function () {
