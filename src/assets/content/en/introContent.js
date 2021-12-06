@@ -2,12 +2,12 @@
 
 //intro.js
 
-var introTitle = "Monkey\nRally";
+var introStart = "click to start!";
 
-var introTitleX = 100;
-var introTitleY = 150;
+var introStartX = 260;
+var introStartY= 510;
 
-var introTitleStyle = {font: "150px Unmasked BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+var introStartStyle = {font: "50px CreativeBlock BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
 
 var introText = ["Oh no! There has been an accident in the laboratory\n and you are stuck between the flames!",
 "Your army of trained monkeys\n have run away…",
