@@ -2,6 +2,8 @@ MouseGame.Boot = function () {
 
 };
 
+var load;
+
 MouseGame.Boot.prototype = {
 
     preload: function () {
@@ -51,6 +53,8 @@ MouseGame.Boot.prototype = {
         //  By this point the preloader assets have loaded to the cache, we've set the game settings
         //  So now let's start the real preloader going
         this.game.state.start('preloader');
+
+        load = game.add.text(loadX, loadY, load, loadStyle);
 
     }
 
