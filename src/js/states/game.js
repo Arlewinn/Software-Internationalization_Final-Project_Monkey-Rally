@@ -1,4 +1,8 @@
-var pausetext = [];
+//var pausetext = [];
+var muteText;
+var unmuteText;
+var menuText;
+var backGameText;
 
 MouseGame.Game = function () {
     "use strict";
@@ -88,6 +92,7 @@ MouseGame.Game.prototype = {
     pauseGame : function () {
         'use strict';
 
+
         if (MouseGame.Commands.prototype.isPlaying === true) {
             MouseGame.Game.prototype.wasPlaying = true;
         }
@@ -97,9 +102,11 @@ MouseGame.Game.prototype = {
         this.pauseMenu = {};
         if (MouseGame.Game.prototype.musicMuted === true) {
             this.pauseMenu.muteButton = this.game.add.button(this.game.world.centerX, this.game.world.centerY - 100, 'button-unmute', this.muteAudio, this, 2, 1, 0);
+
         } else {
             this.pauseMenu.muteButton = this.game.add.button(this.game.world.centerX, this.game.world.centerY - 100, 'button-mute', this.muteAudio, this, 2, 1, 0);
         }
+
         this.pauseMenu.mainMenuButton = this.game.add.button(this.game.world.centerX, this.game.world.centerY, 'button-main-menu', this.returnToMainMenu, this, 2, 1, 0);
         this.pauseMenu.returnToGameButton = this.game.add.button(this.game.world.centerX, this.game.world.centerY + 100, 'button-back', this.unpauseGame, this, 2, 1, 0);
         this.pauseMenu.mainMenuButton.anchor.setTo(0.5, 0.5);
@@ -110,8 +117,20 @@ MouseGame.Game.prototype = {
         MouseGame.MainMenu.prototype.bindButtonHover(this.pauseMenu.returnToGameButton);
         playMusic(false, true);
 
-        pausetext[0] = this.game.add.text();
+
+        this.pauseMenu.mainMenuButton.menuText = this.game.add.text(menuX, menuY, menu, gameContentStyle);
+        this.pauseMenu.mainMenuButton.backGameText = this.game.add.text(backGameX, backGameY, backGame, gameContentStyle);
+
+        /*this.pauseMenu.muteButton.muteText = this.game.add.text(muteX, muteY, mute, gameContentStyle);
+        this.pauseMenu.muteButton.unmuteText = this.game.add.text(unmuteX, unmuteY, unmute, gameContentStyle);*/
+
+        //pausetext[0] = this.game.add.text(creditX, creditY, credit, creditsStyle);
+        //muteText = this.game.add.text(muteX, muteY, mute, gameContentStyle);
+        //menuText = this.game.add.text(menuX, menuY, menu, gameContentStyle);
+
     },
+
+    
 
     unpauseGame: function () {
         'use strict';
@@ -125,8 +144,11 @@ MouseGame.Game.prototype = {
             MouseGame.Game.prototype.wasPlaying = false;
             MouseGame.Commands.prototype.executeOrder();
         }
-        pausetext[0].destroy();
+        this.pauseMenu.mainMenuButton.menuText.destroy();
+        this.pauseMenu.mainMenuButton.backGameText.destroy();
+        //pausetext[0].destroy();
     },
+
 
     returnToMainMenu: function () {
         'use strict';
@@ -137,6 +159,10 @@ MouseGame.Game.prototype = {
         this.pauseMenu.muteButton.destroy();
         this.pauseMenu.returnToGameButton.destroy();
         MouseGame.LevelSelector.prototype.showMenu.call(this);
+
+        this.pauseMenu.mainMenuButton.menuText.destroy();
+        this.pauseMenu.mainMenuButton.backGameText.destroy();
+
     },
 
     muteAudio: function () {
@@ -145,10 +171,14 @@ MouseGame.Game.prototype = {
         if (MouseGame.Game.prototype.musicMuted === false) {
             MouseGame.Game.prototype.musicMuted = true;
             this.pauseMenu.muteButton.loadTexture('button-unmute');
+            //this.pauseMenu.muteButton.unmuteText = this.game.add.text(unmuteX, unmuteY, unmute, gameContentStyle);
+
         } else if (MouseGame.Game.prototype.musicMuted === true) {
             MouseGame.Game.prototype.musicMuted = false;
             this.pauseMenu.muteButton.loadTexture('button-mute');
+            //this.pauseMenu.muteButton.muteText = this.game.add.text(muteX, muteY, mute, gameContentStyle);
         }
+
     }
 };
 

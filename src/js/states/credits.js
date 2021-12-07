@@ -5,7 +5,7 @@ MouseGame.Credits = function (game) {
     this.game = game;
 };
 
-var creditText;
+var creditsText;
 var codeText;
 var antilaText;
 var graphicText;
@@ -39,7 +39,7 @@ MouseGame.Credits.prototype = {
         button.anchor.setTo(0.5, 0.5);
         MouseGame.MainMenu.prototype.bindButtonHover(button);
 
-        creditText = game.add.text(creditX, creditY, credit, creditsStyle);
+        creditsText = game.add.text(creditsX, creditsY, credits, creditsStyle);
         codeText = game.add.text(codeX, codeY, code, creditsStyle2);
         antilaText = game.add.text(antilaX, antilaY, antila, creditsStyle3);
         graphicText = game.add.text(graphicX, graphicY, graphic, creditsStyle2);

@@ -3,7 +3,7 @@
 //credits.js
 
 
-var credit = "Credits:";
+var credits = "Credits:";
 var code = "Code:";
 var antila = "Anders Antila";
 var graphic = "Art and Graphics:";
@@ -18,8 +18,8 @@ var creditsStyle3 = {font: "49px CreativeBlock BB", color: 'black', align: 'cent
 var creditsStyle4 = {font: "40px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
 
 
-var creditX = 450;
-var creditY = 48;
+var creditsX = 450;
+var creditsY = 48;
 var codeX = 600;
 var codeY = 178;
 var antilaX = 480;
