@@ -3,12 +3,12 @@
 //boot.js
 
 
-var load = "Loading...";
+var load = "読み込み…";
 
 
-var loadStyle = {font: "55px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
+var loadStyle = {font: "55px HGSoeiKakupoptai", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
 
-var loadX = 515;
+var loadX = 525;
 var loadY = 350;
 
 

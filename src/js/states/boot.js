@@ -11,7 +11,7 @@ MouseGame.Boot.prototype = {
 
         this.load.image('preloaderBar', 'assets/preloader.png');
         this.load.image('preloaderBarBg', 'assets/preloader-bg.png');
-        game.load.image('preloader-background','assets/backgrounds/preloader.jpg');
+        game.load.image('preloader-background','assets/backgrounds/cleared_text_backgrounds/preloader.jpg');
     },
 
     create: function () {
