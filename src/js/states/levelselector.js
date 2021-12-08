@@ -72,7 +72,7 @@ MouseGame.LevelSelector.prototype = {
         level6Text = game.add.text(level6X, level6Y, level6, levelStyle);
         level7Text = game.add.text(level7X, level7Y, level7, levelStyle);
         level8Text = game.add.text(level8X, level8Y, level8, levelStyle);
-        backText = game.add.text(backX, backY, back, levelStyle);
+        this.game.add.text(backX, backY, back, levelStyle);
     },
 
     startGame: function (button) {

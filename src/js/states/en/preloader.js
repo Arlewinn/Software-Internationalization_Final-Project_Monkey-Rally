@@ -63,16 +63,22 @@ MouseGame.Preloader.prototype = {
         game.load.image('intro-7','assets/backgrounds/intro-7.jpg');
         game.load.image('intro-8','assets/backgrounds/intro-8.jpg');
         game.load.image('intro-9','assets/backgrounds/intro-9.jpg');
+        //change ending to proper langauge folder version
         game.load.image('ending','assets/backgrounds/ending.png');
+        //
         game.load.image('key',          'assets/entities/key.png');
+        //change logo to proper langauge folder version once text editable version is made :D
         game.load.image('logo','assets/buttons/menu_title.png');
+        //
         game.load.image('mainmenu-background','assets/backgrounds/background.jpg');
         game.load.image('monkey',       'assets/entities/monkey.png');
         game.load.image('pill',         'assets/entities/pill.png');
         game.load.image('pipette',      'assets/entities/pipette.png');
         game.load.image('pipetteset',   'assets/entities/pipetteset.png');
         game.load.image('scientist',    'assets/entities/scientist.png');
-        game.load.image('title','assets/backgrounds/title.jpg');
+        //change title to proper langauge folder version
+        game.load.image('title','assets/backgrounds/backgrounds_EN/title.jpg');
+        //
         game.load.spritesheet('item', 'assets/buttons/actions.png', 96, 96);
         game.load.spritesheet('orders', 'assets/buttons/sequence.png', 96, 96);
         game.load.spritesheet('tile-logic', 'assets/tiles/tile-logic.png', 64, 64);

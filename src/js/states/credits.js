@@ -46,7 +46,7 @@ MouseGame.Credits.prototype = {
         erikLauraText = game.add.text(erikLauraX, erikLauraY, erikLaura, creditsStyle3);
         musicText = game.add.text(musicX, musicY, music, creditsStyle2);
         raxlText = game.add.text(raxlX, raxlY, raxl, creditsStyle3);
-        backText = game.add.text(backTextX, backTextY, backText, creditsStyle4);
+        this.game.add.text(backTextX, backTextY, backText, creditsStyle4);
         //history.pushState(null, null, '#credits');
         
     },
