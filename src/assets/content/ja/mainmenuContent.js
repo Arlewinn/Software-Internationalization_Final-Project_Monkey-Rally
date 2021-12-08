@@ -3,10 +3,10 @@
 //mainmenu.js
 
 
-var mainContentStyle = {font: "Bold 37px CreativeBlock BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
-var playText = "PLAY";
-var creditText = "CREDITS";
-var playX = 588;
-var playY = 480;
-var creditX = 558;
-var creditY = 600;
+var mainContentStyle = {font: "Bold 30px HGSoeiKakupoptai", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+var playText = "スタート";
+var creditText = "スタッフ\nロール";
+var playX = 580;
+var playY = 485;
+var creditX = 575;
+var creditY = 588;
