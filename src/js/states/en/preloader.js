@@ -52,17 +52,17 @@ MouseGame.Preloader.prototype = {
         game.load.image('button-main-menu','assets/buttons/main_menu.png');
         game.load.image('button-mute','assets/buttons/mute_audio.png');
         game.load.image('button-unmute','assets/buttons/unmute_audio.png');
-        game.load.image('credits-background','assets/backgrounds/credits-background.jpg');
-        game.load.image('intro-1','assets/backgrounds/intro-1.jpg');
-        game.load.image('intro-10','assets/backgrounds/intro-10.jpg');
-        game.load.image('intro-2','assets/backgrounds/intro-2.jpg');
-        game.load.image('intro-3','assets/backgrounds/intro-3.jpg');
-        game.load.image('intro-4','assets/backgrounds/intro-4.jpg');
-        game.load.image('intro-5','assets/backgrounds/intro-5.jpg');
-        game.load.image('intro-6','assets/backgrounds/intro-6.jpg');
-        game.load.image('intro-7','assets/backgrounds/intro-7.jpg');
-        game.load.image('intro-8','assets/backgrounds/intro-8.jpg');
-        game.load.image('intro-9','assets/backgrounds/intro-9.jpg');
+        game.load.image('credits-background','assets/backgrounds/cleared_text_backgrounds/credits-background.jpg');
+        game.load.image('intro-1','assets/backgrounds/cleared_text_backgrounds/intro-1.jpg');
+        game.load.image('intro-10','assets/backgrounds/cleared_text_backgrounds/intro-10.jpg');
+        game.load.image('intro-2','assets/backgrounds/cleared_text_backgrounds/intro-2.jpg');
+        game.load.image('intro-3','assets/backgrounds/cleared_text_backgrounds/intro-3.jpg');
+        game.load.image('intro-4','assets/backgrounds/cleared_text_backgrounds/intro-4.jpg');
+        game.load.image('intro-5','assets/backgrounds/cleared_text_backgrounds/intro-5.jpg');
+        game.load.image('intro-6','assets/backgrounds/cleared_text_backgrounds/intro-6.jpg');
+        game.load.image('intro-7','assets/backgrounds/cleared_text_backgrounds/intro-7.jpg');
+        game.load.image('intro-8','assets/backgrounds/cleared_text_backgrounds/intro-8.jpg');
+        game.load.image('intro-9','assets/backgrounds/cleared_text_backgrounds/intro-9.jpg');
         //change ending to proper langauge folder version
         game.load.image('ending','assets/backgrounds/ending.png');
         //
