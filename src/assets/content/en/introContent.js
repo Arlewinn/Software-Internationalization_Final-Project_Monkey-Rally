@@ -6,13 +6,13 @@ var introStart = "click to start!";
 
 var introStartX = 260;
 var introStartY= 510;
-var introStartStyle = {font: "50px CreativeBlock BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+var introStartStyle = {font: "50px CreativeBlock BB", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
 
 
 var introTale = "(* or the amazing story of how I was saved\nfrom fire and disaster by the help of a faithful\nand loyal monkey companion)";
 var introTaleX = 115;
 var introTaleY = 573;
-var introTaleStyle = {font: "28px CreativeBlock BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+var introTaleStyle = {font: "28px CreativeBlock BB", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
 
 
 var introText = ["Oh no! There has been an accident in the laboratory\n and you are stuck between the flames!",
@@ -21,7 +21,7 @@ var introText = ["Oh no! There has been an accident in the laboratory\n and you 
 "one monkey.",
 "one set of directions to give.",
 "save yourself! "];
-var introStyle = {font: "italic 42px Unmasked BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+var introStyle = {font: "italic 42px Unmasked BB", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
 var intro1X = 115;
 var intro1Y = 98;
 var intro2X = 330;
