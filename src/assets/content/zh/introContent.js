@@ -4,15 +4,15 @@
 
 var introStart = "点击开始！";
 
-var introStartX = 340;
+var introStartX = 320;
 var introStartY= 510;
 var introStartStyle = {font: "Bold 50px Yuppy TC", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
 
 
-var introTale = "(*或者说这是一个神奇的故事，\n讲述了一只忠诚的小猴子是如何\n从大火和灾祸中将我拯救出来。）";
-var introTaleX = 185;
+var introTale = "(*或者说这是一个神奇的故事，讲述了一只忠诚的小猴子\n是如何从大火和灾祸中将我拯救出来。）";
+var introTaleX = 135;
 var introTaleY = 573;
-var introTaleStyle = {font: "Bold 28px Yuppy TC", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
+var introTaleStyle = {font: "Bold 28px Yuppy TC", fill: "#000000", align: '', stroke: '', strokeThickness: 0};
 
 
 var introText = ["天！实验室出事故了，你被困在了大火中！",
