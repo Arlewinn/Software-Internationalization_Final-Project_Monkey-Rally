@@ -31,7 +31,7 @@ MouseGame.Preloader.prototype = {
         this.load.setPreloadSprite(this.preloadBar);
 
         for (var i = 1; i <= 8; i++) {
-            game.load.image('button-level' + i,'assets/buttons/level' + i + '.png');
+            game.load.image('button-level' + i,'assets/buttons/button_blank-assets/button_empty.png');
             game.load.tilemap('level'+i, 'assets/maps/level' + i + '.json', null, Phaser.Tilemap.TILED_JSON);
         }
 
@@ -45,11 +45,11 @@ MouseGame.Preloader.prototype = {
         game.load.image('bottle_red',   'assets/entities/bottle_red.png');
         game.load.image('bottle_yellow','assets/entities/bottle_yellow.png');
         game.load.image('button','assets/buttons/background.png');
-        game.load.image('button-back','assets/buttons/back.png');
+        game.load.image('button-back','assets/buttons/button_blank-assets/button_empty.png');
         game.load.image('button-check','assets/buttons/check.png');
         game.load.image('button-credits','assets/buttons/credits.png');
         game.load.image('button-play','assets/buttons/play.png');
-        game.load.image('button-main-menu','assets/buttons/main_menu.png');
+        game.load.image('button-main-menu','assets/buttons/button_blank-assets/button_empty.png');
         game.load.image('button-mute','assets/buttons/mute_audio.png');
         game.load.image('button-unmute','assets/buttons/unmute_audio.png');
         game.load.image('credits-background','assets/backgrounds/cleared_text_backgrounds/credits-background.jpg');
