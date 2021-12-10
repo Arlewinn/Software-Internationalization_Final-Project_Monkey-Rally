@@ -35,7 +35,7 @@ MouseGame.Credits.prototype = {
         // var t = this.game.add.sprite(100, 600, 'touhou');
         // t.anchor.setTo(0, 1);
 
-        var button = this.game.add.button(this.game.world.centerX, 630, 'button-back', this.showMenu, this, 2, 1, 0);
+        var button = this.game.add.button(this.game.world.centerX, 630, 'button-empty', this.showMenu, this, 2, 1, 0);
         button.anchor.setTo(0.5, 0.5);
         MouseGame.MainMenu.prototype.bindButtonHover(button);
 
