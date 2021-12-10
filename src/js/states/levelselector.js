@@ -58,7 +58,7 @@ MouseGame.LevelSelector.prototype = {
             MouseGame.MainMenu.prototype.bindButtonHover(levelButton);
 
             if (localStorage["level-" + levelButton.level] === 'true') {
-                var check = this.game.add.sprite(posX + 15, posY - 50, 'button-check');
+                var check = this.game.add.sprite(posX + 45, posY - 60, 'button-check');
                 // check.scale.x = check.scale.y = 0.5;
             }
         }
