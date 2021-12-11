@@ -50,8 +50,8 @@ MouseGame.Preloader.prototype = {
         game.load.image('button-credits','assets/buttons/credits.png');
         game.load.image('button-play','assets/buttons/play.png');
         game.load.image('button-main-menu','assets/buttons/button_blank-assets/button_empty.png');
-        game.load.image('button-mute','assets/buttons/mute_audio.png');
-        game.load.image('button-unmute','assets/buttons/unmute_audio.png');
+        game.load.image('button-mute','assets/buttons/buttons_IT/mute_audio.png');
+        game.load.image('button-unmute','assets/buttons/buttons_IT/unmute_audio.png');
         game.load.image('credits-background','assets/backgrounds/cleared_text_backgrounds/credits-background.jpg');
         game.load.image('intro-1','assets/backgrounds/cleared_text_backgrounds/intro-1.jpg');
         game.load.image('intro-10','assets/backgrounds/cleared_text_backgrounds/intro-10.jpg');
