@@ -3,7 +3,7 @@
 //mainmenu.js
 
 
-var mainContentStyle = {font: "Bold 30px HGSoeiKakupoptai", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+var mainContentStyle = {font: "Bold 30px HGSoeiKakupoptai", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
 var playText = "スタート";
 var creditText = "スタッフ\nロール";
 var playX = 580;
