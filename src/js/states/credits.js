@@ -13,6 +13,9 @@ var erikLauraText;
 var musicText;
 var raxlText;
 var backText;
+var locText;
+var locNameText;
+var thanksText;
 
 
 MouseGame.Credits.prototype = {
@@ -47,6 +50,9 @@ MouseGame.Credits.prototype = {
         musicText = game.add.text(musicX, musicY, music, creditsStyle2);
         raxlText = game.add.text(raxlX, raxlY, raxl, creditsStyle3);
         this.game.add.text(backTextX, backTextY, backText, creditsStyle4);
+        locText = game.add.text(locTextX, locTextY, loc, creditsStyle2);
+        locNameText = game.add.text(locNameX, locNameY, locName, creditsStyle4);
+        thanksText = game.add.text(thanksX, thanksY, thanks, creditsStyle4);
         //history.pushState(null, null, '#credits');
         
     },
