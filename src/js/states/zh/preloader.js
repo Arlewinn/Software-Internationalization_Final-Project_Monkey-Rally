@@ -68,7 +68,7 @@ MouseGame.Preloader.prototype = {
         //
         game.load.image('key',          'assets/entities/key.png');
         //change logo to proper langauge folder version once text editable version is made :D
-        game.load.image('logo','assets/buttons/menu_title.png');
+        game.load.image('logo','assets/buttons/buttons_ZH/menu_title.png');
         //
         game.load.image('mainmenu-background','assets/backgrounds/background.jpg');
         game.load.image('monkey',       'assets/entities/monkey.png');
