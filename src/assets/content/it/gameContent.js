@@ -1,13 +1,13 @@
-var mute = "Mute";
-var unmute = "Unmute";
+var mute = "Silenzioso";
+var unmute = "Suono";
 var menu = "Menu";
-var backGame = "Back";
+var backGame = "Indietro";
 
 var gameContentStyle = {font: "Bold 37px CreativeBlock BB", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
 
 var menuX = 588;
 var menuY = 342;
-var backGameX = 588;
+var backGameX = 548;
 var backGameY = 440;
 var muteX = 588;
 var muteY = 240;

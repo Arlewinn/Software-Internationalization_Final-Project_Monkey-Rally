@@ -3,9 +3,9 @@
 //mainmenu.js
 
 
-var mainContentStyle = {font: "Bold 37px CreativeBlock BB", fill: "#0000FF", align: 'center', stroke: '', strokeThickness: 0};
+var mainContentStyle = {font: "Bold 37px CreativeBlock BB", fill: "#000000", align: 'center', stroke: '', strokeThickness: 0};
 var playText = "PLAY";
-var creditText = "CREDITS";
+var creditText = "CREDITI";
 var playX = 588;
 var playY = 480;
 var creditX = 558;
