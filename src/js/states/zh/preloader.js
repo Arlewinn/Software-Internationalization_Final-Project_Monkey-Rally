@@ -81,7 +81,7 @@ MouseGame.Preloader.prototype = {
         //
         game.load.spritesheet('item', 'assets/buttons/actions.png', 96, 96);
         game.load.spritesheet('orders', 'assets/buttons/sequence.png', 96, 96);
-        game.load.spritesheet('tile-logic', 'assets/tiles/tile-logic.png', 64, 64);
+        game.load.spritesheet('tile-logic', 'assets/tiles/tile-logic_img.png', 64, 64);
         game.load.spritesheet('tiles-sprites', 'assets/tiles/new-tiles.png', 64, 64);
         game.load.tileset('tiles', 'assets/tiles/game-tiles.png', 64, 64);
         game.load.tileset('decorations', 'assets/tiles/decorations.png', 64, 64);
