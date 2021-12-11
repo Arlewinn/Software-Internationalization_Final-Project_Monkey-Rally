@@ -51,7 +51,7 @@ MouseGame.Credits.prototype = {
         raxlText = game.add.text(raxlX, raxlY, raxl, creditsStyle3);
         this.game.add.text(backTextX, backTextY, backText, creditsStyle4);
         locText = game.add.text(locTextX, locTextY, loc, creditsStyle2);
-        locNameText = game.add.text(locNameX, locNameY, locName, creditsStyle4);
+        locNameText = game.add.text(locNameX, locNameY, locName, creditsStyle5);
         thanksText = game.add.text(thanksX, thanksY, thanks, creditsStyle4);
         //history.pushState(null, null, '#credits');
         

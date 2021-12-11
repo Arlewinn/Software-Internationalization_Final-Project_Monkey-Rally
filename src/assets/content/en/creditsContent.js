@@ -19,6 +19,7 @@ var creditsStyle = {font: "95px CreativeBlock BB", color: 'black', align: 'cente
 var creditsStyle2 = {font: "30px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
 var creditsStyle3 = {font: "49px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
 var creditsStyle4 = {font: "40px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
+var creditsStyle5 = {font: "40px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
 
 
 var creditsX = 450;
