@@ -12,10 +12,10 @@ var music = "音乐：";
 var raxl = "Raxl Snaxel";
 var backText = "返回";
 
-var creditsStyle = {font: "95px Hannotate TC", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
-var creditsStyle2 = {font: "30px Hannotate TC", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
-var creditsStyle3 = {font: "49px Hannotate TC", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
-var creditsStyle4 = {font: "40px Hannotate TC", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
+var creditsStyle = {font: "Bold 90px Yuppy TC", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
+var creditsStyle2 = {font: "Bold 30px Yuppy TC", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
+var creditsStyle3 = {font: "49px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
+var creditsStyle4 = {font: "Bold 40px Yuppy TC", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
 
 
 var creditsX = 450;
@@ -24,16 +24,16 @@ var codeX = 600;
 var codeY = 178;
 var antilaX = 480;
 var antilaY = 218;
-var graphicX = 510;
+var graphicX = 600;
 var graphicY = 312;
 var erikLauraX = 315;
 var erikLauraY = 354;
-var musicX = 598;
+var musicX = 600;
 var musicY = 448;
 var raxlX = 500;
 var raxlY = 488;
-var backTextX = 595;
-var backTextY = 610;
+var backTextX = 600;
+var backTextY = 615;
 
 
 
