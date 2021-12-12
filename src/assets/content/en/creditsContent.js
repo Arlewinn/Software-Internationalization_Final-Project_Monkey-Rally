@@ -12,7 +12,7 @@ var music = "Music:";
 var raxl = "Raxl Snaxel";
 var backText = "Back";
 var loc = "Localization:"
-var locName = "Andrew Taylor, Ekaterina Cudinova,\nFrancesca, Tantussi, Xinxin Huang,  Yijun Wu";
+var locName = "Andrew Taylor, Ekaterina Chudinova,\nFrancesca Tantussi, Xinxin Huang,  Yijun Wu";
 var thanks = "Special thanks to twitch.tv/OverlordSeaweaver";
 
 var creditsStyle = {font: "95px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
