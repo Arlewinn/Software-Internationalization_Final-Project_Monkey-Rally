@@ -10,7 +10,7 @@ var introStartStyle = {font: "Bold 50px Yuppy TC", fill: "#000000", align: 'cent
 
 
 var introTale = "(*或者说这是一个神奇的故事，讲述了一只忠诚的小猴子\n是如何从大火和灾祸中将我拯救出来。）";
-var introTaleX = 135;
+var introTaleX = 155;
 var introTaleY = 573;
 var introTaleStyle = {font: "Bold 24px Yuppy TC", fill: "#000000", align: '', stroke: '', strokeThickness: 0};
 
