@@ -11,6 +11,9 @@ var erikLaura = "Erik Nahkala & Laura Kantti";
 var music = "Music:";
 var raxl = "Raxl Snaxel";
 var backText = "Indietro";
+var loc = "Localizzazione:"
+var locName = "Andrew Taylor, Ekaterina Chudinova,\nFrancesca Tantussi, Xinxin Huang, Yijun Wu";
+var thanks = "Particolare menzione per twitch.tv/OverlordSeaweaver (grazie!)";
 
 var creditsStyle = {font: "95px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
 var creditsStyle2 = {font: "30px CreativeBlock BB", color: 'black', align: 'center', stroke: '', strokeThickness: 0};
